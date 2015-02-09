@@ -9,7 +9,6 @@
 /dev/block/mmcblk0p18    /cache         f2fs      rw,discard,nosuid,nodev,noatime,nodiratime,inline_xattr                           wait
 /dev/block/mmcblk0p18    /cache         ext4      noatime,nosuid,nodev,journal_async_commit,errors=panic                            wait,check
 /dev/block/mmcblk0p17    /efs           ext4      noatime,nosuid,nodev,journal_async_commit,errors=panic                            wait,check
-/dev/block/mmcblk0p20    /preload       ext4      ro,nosuid,nodev,noatime,journal_async_commit                                      wait
 
 # recovery
 /dev/block/mmcblk0p5     /boot          emmc      defaults                                                                          defaults
