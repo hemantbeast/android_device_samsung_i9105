@@ -1,8 +1,6 @@
 # Include common makefile
 $(call inherit-product, device/samsung/galaxys2plus-common/common.mk)
 
-LOCAL_PATH := device/samsung/i9105
-
 # Init scripts
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/ramdisk/init.capri_ss_s2ve.rc:root/init.capri_ss_s2ve.rc \
