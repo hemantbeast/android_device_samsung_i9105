@@ -1,13 +1,20 @@
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+
+# Inherit device configuration
+$(call inherit-product, device/samsung/i9105/i9105.mk)
+
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-# Inherit device configuration
-$(call inherit-product, device/samsung/i9105/full_i9105.mk)
-
-# Device identifier. This must come after all inclusions
+## Device identifier. This must come after all inclusions
 PRODUCT_NAME := cm_i9105
+PRODUCT_DEVICE := i9105
+PRODUCT_BRAND := samsung
+PRODUCT_MANUFACTURER := Samsung
+PRODUCT_MODEL := GT-I9105
 
-# Set build fingerprint / ID / Prduct Name ect.
+# Set build fingerprint / ID / Product Name etc.
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=s2vexx \
     TARGET_DEVICE=s2ve \
